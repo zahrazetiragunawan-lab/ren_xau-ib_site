@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ren_Xau — XAUUSD Trading Hub (Edukasi & Tools)</title>
+  <meta name="description" content="Ren_Xau: Edukasi XAUUSD (H4→H1), tools RR, dan panduan disiplin trading. Promo IB tersedia dengan disclosure & risk warning." />
+
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111824; --text:#e8eef7; --muted:#9fb0c4;
+      --line:#233042; --accent:#ffd166; --ok:#42f59e; --bad:#ff5c5c;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 0;position:sticky;top:0;background:rgba(11,15,20,.78);backdrop-filter:blur(8px);z-index:50}
+    .brand{font-weight:900;letter-spacing:.3px}
+    .menu{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:var(--muted)}
+    .pill:hover{border-color:#2f415a;color:#cfe0f5}
+
+    .btn{padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:#0e1520;color:var(--text);font-weight:700;cursor:pointer;display:inline-block}
+    .btn.primary{background:var(--accent);color:#1b1b1b;border-color:transparent}
+    .btn.primary:hover{filter:brightness(.97)}
+
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin-top:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+    h1{margin:0 0 10px;font-size:30px;line-height:1.15}
+    h2{margin:0 0 10px;font-size:20px}
+    h3{margin:0 0 10px;font-size:16px}
+    p{margin:0;color:var(--muted);line-height:1.65}
+
+    .kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .tag{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted)}
+
+    .cta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+
+    .tv{height:420px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0e1520}
+
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;color:var(--muted);font-size:12px;margin:12px 0 6px}
+    input,select{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0e1520;color:var(--text)}
+
+    .out{margin-top:12px;padding:12px;border-radius:12px;border:1px dashed var(--line);color:var(--muted);white-space:pre-line}
+    .split{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+    .small{font-size:12px;color:var(--muted);line-height:1.6}
+    .warn{border-left:4px solid var(--accent);padding-left:10px}
+    .ok{color:var(--ok)} .bad{color:var(--bad)}
+    .footer{margin-top:16px}
+    .copy{font-size:12px;color:var(--muted);margin-top:10px}
+
+    .contactBox{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .tv{height:360px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Ren_Xau</div>
+      <div class="menu">
+        <a class="pill" href="#chart">Chart</a>
+        <a class="pill" href="#tools">Tools</a>
+        <a class="pill" href="#belajar">Belajar</a>
+        <a class="pill" href="#faq">FAQ</a>
+        <a class="pill" href="#kontak">Kontak</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="card">
+        <h1>XAUUSD Trading Hub — Edukasi, Analisa, dan Tools Praktis</h1>
+        <p>
+          Fokus: cara membaca <b>H4 → H1</b>, memahami <b>zona (SNR/OB)</b>, <b>liquidity (EQH/EQL)</b>, dan eksekusi dengan <b>risk management</b>.
+          Tidak ada janji profit — kita fokus ke proses & disiplin.
+        </p>
+
+        <div class="kpi">
+          <div class="tag">✅ H4 Zone</div>
+          <div class="tag">✅ H1 Confirm</div>
+          <div class="tag">✅ Risk/Reward</div>
+          <div class="tag">✅ Intraday/Swing</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="https://ma.valetax-indonesia.com/p/7675232" target="_blank" rel="noopener">Daftar Broker via Link IB</a>
+          <a class="btn" href="#tools">Hitung RR (Entry/SL/TP)</a>
+        </div>
+
+        <div class="out warn" style="margin-top:14px">
+          <b style="color:#fff">Affiliate/IB Disclosure:</b>
+          Ren_Xau dapat komisi/imbalan jika Anda mendaftar melalui link IB di atas.
+          <br><b style="color:#fff">Risk Warning:</b> Trading berisiko. Konten ini edukasi, bukan nasihat keuangan.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Kenapa XAUUSD?</h2>
+        <p>Gold cenderung volatil, cocok untuk intraday dan swing, tapi butuh disiplin SL dan manajemen risiko.</p>
+
+        <div class="split">
+          <div class="card" style="padding:12px">
+            <h3>Jam “hidup”</h3>
+            <p class="small">Biasanya ramai saat London–NY. Saat sepi, rawan noise.</p>
+          </div>
+          <div class="card" style="padding:12px">
+            <h3>Wick & sweep</h3>
+            <p class="small">XAU sering “sapu” high/low dulu. Makanya SL/konfirmasi penting.</p>
+          </div>
+          <div class="card" style="padding:12px">
+            <h3>Plan & jurnal</h3>
+            <p class="small">Tanpa plan, gampang FOMO. Simpan jurnal untuk evaluasi.</p>
+          </div>
+        </div>
+
+        <div class="contactBox">
+          <a class="btn" href="#kontak">Kontak Ren_Xau</a>
+          <a class="btn primary" href="https://wa.me/6289875265898" target="_blank" rel="noopener">Chat WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="chart" class="grid">
+      <div class="card">
+        <h2>Chart XAUUSD</h2>
+        <p style="margin-bottom:12px">Ganti timeframe (H4/H1/M30) langsung di widget. Default: H4.</p>
+        <div id="tv" class="tv"></div>
+      </div>
+
+      <div id="tools" class="card">
+        <h2>RR Calculator</h2>
+        <p>Masukkan Entry, SL, TP dulu sebelum entry — biar disiplin.</p>
+
+        <div class="row">
+          <div>
+            <label>Mode</label>
+            <select id="mode">
+              <option value="buy">BUY</option>
+              <option value="sell">SELL</option>
+            </select>
+          </div>
+          <div>
+            <label>Risk per Trade (opsional)</label>
+            <input id="riskusd" type="number" step="1" placeholder="misal 10 (USD)" />
+          </div>
+        </div>
+
+        <label>Entry</label>
+        <input id="entry" type="number" step="0.01" placeholder="misal 2035.50" />
+
+        <label>Stop Loss (SL)</label>
+        <input id="sl" type="number" step="0.01" placeholder="SELL: SL > Entry | BUY: SL < Entry" />
+
+        <label>Take Profit (TP)</label>
+        <input id="tp" type="number" step="0.01" placeholder="SELL: TP < Entry | BUY: TP > Entry" />
+
+        <div class="cta" style="margin-top:12px">
+          <button class="btn primary" id="calc">Hitung</button>
+          <button class="btn" id="reset">Reset</button>
+        </div>
+
+        <div class="out" id="out">Hasil akan tampil di sini.</div>
+
+        <div class="small" style="margin-top:10px">
+          Catatan: Perhitungan lot/uang per point bergantung broker/contract size. Kalkulator ini fokus ke RR & jarak.
+        </div>
+      </div>
+    </section>
+
+    <section id="belajar" class="grid">
+      <div class="card">
+        <h2>Framework Analisa H4 → H1 (Simple)</h2>
+        <p class="small">
+          <b>Step 1 (H4):</b> tentukan bias & zona utama (Supply/Demand/OB). Tandai liquidity (EQH/EQL) sebagai target/sweep.<br>
+          <b>Step 2 (H1):</b> tunggu konfirmasi: rejection + perubahan struktur (break high/low kecil).<br>
+          <b>Step 3:</b> eksekusi dengan SL jelas & RR minimal 1.5–2.0.
+        </p>
+
+        <div class="out" style="margin-top:12px">
+          <b style="color:#fff">Checklist cepat:</b>
+          1) Ada zona H4? 2) Ada target liquidity? 3) H1 confirm? 4) SL jelas? 5) RR cukup?
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="https://ma.valetax-indonesia.com/p/7675232" target="_blank" rel="noopener">Buka Akun via Link IB</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Cara Daftar via IB (3 langkah)</h2>
+        <p class="small">
+          1) Klik tombol “Daftar via Link IB”<br>
+          2) Isi data akun trading sesuai form broker<br>
+          3) Selesai, lanjut instal platform (MT5) + login akun
+        </p>
+
+        <div class="out warn" style="margin-top:12px">
+          <b style="color:#fff">Penting:</b> Jangan deposit pakai uang kebutuhan hidup. Pahami risiko & aturan broker.
+        </div>
+
+        <div class="contactBox">
+          <a class="btn" href="tel:089875265898">Telepon: 089875265898</a>
+          <a class="btn primary" href="https://wa.me/6289875265898" target="_blank" rel="noopener">WhatsApp: 089875265898</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="card" style="margin-top:16px">
+      <h2>FAQ</h2>
+      <div class="small">
+        <p><b>Q: Ini sinyal?</b><br>A: Bukan. Ini edukasi & tools untuk bantu disiplin trading.</p>
+        <p><b>Q: Saya daftar lewat IB dapat apa?</b><br>A: Anda tetap dapat layanan broker normal. Saya dapat komisi sebagai IB. Jika perlu, Anda bisa kontak untuk bantuan edukasi/checklist.</p>
+        <p><b>Q: Kenapa fokus RR?</b><br>A: RR + disiplin SL itu pondasi. Tanpa itu, strategi bagus pun bisa kalah.</p>
+      </div>
+    </section>
+
+    <section id="kontak" class="card footer">
+      <h2>Kontak Ren_Xau</h2>
+      <p>WhatsApp / Telepon: <b>089875265898</b></p>
+      <div class="contactBox">
+        <a class="btn primary" href="https://wa.me/6289875265898" target="_blank" rel="noopener">Chat WhatsApp</a>
+        <a class="btn" href="tel:089875265898">Telepon</a>
+        <a class="btn" href="https://ma.valetax-indonesia.com/p/7675232" target="_blank" rel="noopener">Daftar via Link IB</a>
+      </div>
+
+      <div class="out warn" style="margin-top:12px">
+        <b style="color:#fff">Disclaimer:</b> Konten bersifat edukasi dan opini. Trading mengandung risiko kerugian. Jangan gunakan uang kebutuhan hidup.
+        Selalu pahami ketentuan broker dan regulasi yang berlaku.
+      </div>
+
+      <div class="copy">© <span id="y"></span> Ren_Xau — XAUUSD Trading Hub</div>
+    </section>
+  </div>
+
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // TradingView chart (default H4)
+    new TradingView.widget({
+      autosize: true,
+      symbol: "OANDA:XAUUSD",
+      interval: "240",
+      timezone: "Asia/Jakarta",
+      theme: "dark",
+      style: "1",
+      locale: "id",
+      container_id: "tv",
+      hide_top_toolbar: false,
+      allow_symbol_change: true
+    });
+
+    // RR calculator
+    const $ = (id) => document.getElementById(id);
+    const num = (v) => { const n = parseFloat(v); return Number.isFinite(n) ? n : null; };
+
+    function calcRR(){
+      const mode = $("mode").value;
+      const entry = num($("entry").value);
+      const sl    = num($("sl").value);
+      const tp    = num($("tp").value);
+      const riskUsd = num($("riskusd").value);
+
+      if(entry===null || sl===null || tp===null){
+        $("out").textContent = "Isi Entry, SL, TP dulu bro.";
+        return;
+      }
+
+      const riskPts = Math.abs(entry - sl);
+      const rewardPts = Math.abs(tp - entry);
+      const rr = rewardPts / riskPts;
+
+      let msg = `Risk: ${riskPts.toFixed(2)} | Reward: ${rewardPts.toFixed(2)} | RR: ${rr.toFixed(2)}\n`;
+      msg += (rr >= 2 ? "✅ RR bagus (≥2)" : (rr >= 1.5 ? "👍 RR oke (≥1.5)" : "⚠️ RR kecil, pertimbangkan ulang"));
+
+      if(mode === "buy" && !(sl < entry && tp > entry)) msg += "\n⚠️ BUY: biasanya SL < Entry dan TP > Entry.";
+      if(mode === "sell" && !(sl > entry && tp < entry)) msg += "\n⚠️ SELL: biasanya SL > Entry dan TP < Entry.";
+
+      if(riskUsd !== null){
+        msg += `\n\nCatatan: Risk target kamu: $${riskUsd}. (Lot/uang per point tergantung broker/contract size).`;
+      }
+
+      $("out").textContent = msg;
+    }
+
+    $("calc").addEventListener("click", calcRR);
+    $("reset").addEventListener("click", () => {
+      ["entry","sl","tp","riskusd"].forEach(id => $(id).value = "");
+      $("out").textContent = "Hasil akan tampil di sini.";
+    });
+  </script>
+</body>
+</html>
